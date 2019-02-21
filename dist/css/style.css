@@ -18,7 +18,7 @@
     transform: translateX(30rem); }
     @media (max-width: 37.5em) {
       .container.active {
-        transform: translateX(25rem); } }
+        transform: translateX(0rem); } }
 
 *, *::after, *::before {
   box-sizing: inherit;
@@ -131,7 +131,8 @@ body {
   align-items: flex-start;
   opacity: 0;
   transform: translateX(-100%);
-  transition: all .3s ease-out; }
+  transition: all .3s ease-out;
+  z-index: 150; }
   @media (max-width: 37.5em) {
     .navigation {
       width: 25rem; } }
@@ -171,7 +172,7 @@ body {
   margin: auto;
   top: 10%;
   right: 5%;
-  z-index: 100;
+  z-index: 200;
   cursor: pointer;
   width: 8rem;
   height: 8rem;

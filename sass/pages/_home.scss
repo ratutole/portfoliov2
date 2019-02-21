@@ -5,7 +5,7 @@
     &.active{
         transform: translateX(30rem);
         @include respond(phone){
-            transform: translateX(25rem);
+            transform: translateX(0rem);
         }
     }
 }
