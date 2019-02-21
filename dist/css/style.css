@@ -277,8 +277,9 @@ body {
   @media (max-width: 37.5em) {
     .projects-item {
       flex-direction: column; } }
-  .projects-item--2 {
-    flex-direction: column-reverse; }
+  @media (max-width: 37.5em) {
+    .projects-item--2 {
+      flex-direction: column-reverse; } }
   .projects-item__content {
     flex: 0 0 22.5%;
     background-color: #EBFFFB;

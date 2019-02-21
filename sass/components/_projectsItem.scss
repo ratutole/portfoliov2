@@ -6,7 +6,9 @@
     }
 
     &--2{
-        flex-direction: column-reverse;
+        @include respond(phone){
+            flex-direction: column-reverse;
+        }
     }
 
     &__content{
