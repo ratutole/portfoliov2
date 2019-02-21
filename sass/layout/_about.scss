@@ -1,0 +1,11 @@
+.about{
+    background-color: #fff;
+    padding: 1rem 0;
+    &__text{
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+        line-height: 1.6;
+        padding: 2rem 0;
+        color: $color-gray--medium2;
+    }
+}

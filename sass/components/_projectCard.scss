@@ -1,0 +1,25 @@
+.project-card{
+    display: flex;
+
+
+    &__item{
+        margin: 0 2rem;
+    }
+
+    &__heading{
+        background-color: $color-blue--light;
+        width: 80%;
+        padding: 1rem;
+        transform: translate(10%, .5rem);
+        text-align: center;
+        position: relative;
+        font-size: 1.8rem;
+        box-shadow: 0 .2rem .5rem $color-shadow--light;
+        // z-index: 50;
+    }
+
+    &__image{
+        width: 100%;
+        display: block;
+    }
+}

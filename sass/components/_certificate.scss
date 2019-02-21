@@ -1,0 +1,11 @@
+.certificate{
+
+    &__text{
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+        line-height: 1.6;
+        padding: 1.5rem 0;
+        max-width: 60%;
+        color: $color-gray--medium2;
+    }
+}

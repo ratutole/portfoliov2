@@ -1,0 +1,8 @@
+.container{
+    transition: all .3s ease-out;
+    position: relative;
+    background-color: $color-gray--light;
+    &.active{
+        transform: translateX(30rem);
+    }
+}

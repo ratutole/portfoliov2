@@ -1,0 +1,57 @@
+.projects-item{
+    display: flex;
+
+    &__content{
+        flex: 0 0 22.5%;
+        background-color: $color-gray--light;
+        height: 30rem;
+        transform: translateY(2rem);
+        padding: 2rem;
+        box-shadow: 0 .3rem .6rem $color-shadow--light;
+
+        &--1{
+            transform: rotate(-8deg) translateY(2.5rem);
+        }
+
+        &--2{
+            transform: rotate(2deg) translate(1.5rem, 1.5rem);
+        }
+    }
+    
+    &__link{
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        transition: all .3s;
+
+        &:hover{
+            color: $color-gray--medium;
+        }
+
+    }
+
+   &__link-container{
+       text-align: right;
+       margin-top: 1.5rem;
+   }
+
+    &__text{
+        padding: 2rem 0;
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+        font-weight: 300;
+        line-height: 1.6;
+        color: $color-gray--medium2;
+    }
+
+    &__image-container{
+        height: 35rem;
+        overflow: hidden;
+        box-shadow: 0 .3rem .6rem $color-shadow--medium;
+    }
+
+    &__image{
+        width: 100%;
+        display: block;
+    }
+}

@@ -2,13 +2,191 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>VVan Setup</title>
+    <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="dist/css/style.css">
 </head>
 <body>
-    <div>
-        
+    <nav class="navigation">
+        <ul class="navigation__container">
+            <li><a href="#skills" class="navigation__link">skills</a></li>
+            <li><a href="#projects" class="navigation__link">projects</a></li>
+            <li><a href="#about" class="navigation__link">about</a></li>
+            <li><a href="#certification" class="navigation__link">certification</a></li>
+        </ul>
+        <p class="navigation__copyright">&copy; Parth Patel. All Rights Reserved</p>
+    </nav>
+    <div class="hamburger">
+        <div class="hamburger__menu"></div>
     </div>
+    <div class="container">
+        <section class="landing u-mb-lg">
+            <div class="calendar">
+                <div class="date">
+                    <div id="daymonth" class="calendar__month"></div>
+                    <div id="year" class="calendar__year"></div>
+                </div>
+            </div>
+            <div class="landing__content">
+                <h1 class="heading heading--main">
+                    Parth Patel
+                </h1>
+                <h2 class="heading heading--sub">Front End Developer</h2>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="u-inner-container">
+                <h3 class="heading heading--3 u-mb-md">
+                    Skills
+                </h3>
+                <div class="skills__container u-mb-lg">
+                    <div class="card card--first">
+                        <h4 class="heading heading--4 u-mb-sm card__heading">
+                            technologies
+                        </h4>
+                        <ul class="card__list">
+                            <li class="card__list-item">html</li>
+                            <li class="card__list-item">css</li>
+                            <li class="card__list-item">javascript</li>
+                            <li class="card__list-item">node.js</li>
+                            <li class="card__list-item">mongodb</li>
+                            <li class="card__list-item">version control (git)</li>
+
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4 class="heading heading--4 u-mb-sm card__heading">
+                            frameworks and libraries
+                        </h4>
+                        <ul class="card__list">
+                            <li class="card__list-item">jquery</li>
+                            <li class="card__list-item">react</li>
+                            <li class="card__list-item">bootstrap</li>
+                            <li class="card__list-item">wordpress</li>
+                            <li class="card__list-item">sass</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4 class="heading heading--4 u-mb-sm card__heading">
+                            design
+                        </h4>
+                        <ul class="card__list">
+                            <li class="card__list-item">photoshop</li>
+                            <li class="card__list-item">Illustrator</li>
+                            <li class="card__list-item">xd</li>
+                            <li class="card__list-item">draw.io</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects u-mb-lg">
+            <div class="u-inner-container">
+                <h3 class="heading heading--3 heading--white u-mb-md">
+                    Projects
+                </h3>
+                <div class="projects-item-container u-mb-lg">
+                    <div class="projects-item">
+                        <section class="projects-item__content projects-item__content--1">
+                            <h4 class="heading heading--4">
+                                responsive university site
+                            </h4>
+                            <p class="projects-item__text">
+                                This website is fully responsive built using js, css and html. It was built as part of completion of my training specifications.
+                            </p>
+                        </section>
+                        <div class="projects-item__image-container">
+                            <img src="./dist/images/uni.jpg" alt="University Site Image" class="projects-item__image">
+                        </div>
+                    </div>
+                    <div class="projects-item__link-container">
+                        <a href="https://ratutole.github.io/ia-uni-site/" class="projects-item__link" target="blank">check it out &gt;&gt;</a>
+                    </div>
+                </div>
+                <div class="projects-item-container u-mb-lg">
+                    <div class="projects-item">
+                        <div class="projects-item__image-container">
+                            <img src="./dist/images/om.jpg" alt="Construction Site Image" class="projects-item__image">
+                        </div>
+                        <section class="projects-item__content projects-item__content--2">
+                            <h4 class="heading heading--4">
+                                responsive construction site
+                            </h4>
+                            <p class="projects-item__text">
+                                This website is fully responsive built using css and html. It was built as part of my course on udemy.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="projects-item__link-container">
+                        <a href="https://ratutole.github.io/om" class="projects-item__link" target="blank">check it out &gt;&gt;</a>
+                    </div>
+                </div>
+                <div class="project-card u-mb-md">
+                    <section class="project-card__item">
+                        <h4 class="heading heading--4 project-card__heading">XD to HTML (Sierra)</h4>
+                        <div class="project-card__image-container">
+                            <img src="./dist//images/sierra.png" alt="Kanji app picture" class="project-card__image">
+                        </div>
+                    </section>
+                    <section class="project-card__item">
+                        <h4 class="heading heading--4 project-card__heading">EJS (Kanji Card)</h4>
+                        <div class="project-card__image-container">
+                            <img src="./dist//images/kanji.png" alt="Kanji app picture" class="project-card__image">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="u-inner-container">
+                <h3 class="heading heading--3 about__heading heading--padded">
+                    About
+                </h3>
+                <hr class="about__hr">
+                <p class="about__text">
+                    I am web developer based in Gujurat, India. I like developing sites and plan become a full stack developer in the near future. I like building small games as a hobby.
+                </p>
+
+                <h3 class="heading heading--3 heading--padded">
+                    Certifications
+                </h3>
+                <hr class="certifications__hr u-mb-sm">
+                <div class="certificate u-mb-sm">
+                    <h4 class="heading heading--4 heading--small heading--bb">
+                        Full Time Coding Bootcamp - Internet Academy
+                    </h4>
+                    <p class="certificate__text">
+                        A bootcamp covering technologies such Photoshop, Illustrator, HTML5, CSS3, JavaScript,
+                        JQuery, Bootstrap. As part of the course I completed a project on a responsive
+                        university website containing dynamic elements using vanilla js.
+                    </p>
+                </div>
+                <div class="certificate u-mb-sm">
+                    <h4 class="heading heading--4 heading--small heading--bb">
+                        Advanded SASS and CSS
+                    </h4>
+                    <p class="certificate__text">
+                        A course covering all topics related to advanced techniques of CSS including grids, flex
+                        and sass workflow.
+                    </p>
+                </div>
+                <div class="certificate u-mb-sm">
+                    <h4 class="heading heading--4 heading--small heading--bb">
+                        Responsive Web Development
+                    </h4>
+                    <p class="certificate__text">
+                        A course covering all topics related to responsive web development of a site in HTML and
+                        CSS with 5 mini-projects to complete as a requirement for the certification.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__text">Designed and developed by Parth Patel.</p>
+            <p class="footer__text--light">ratutole@gmail.com</p>
+        </footer>
+    </div>
+    <script src="./dist/script.js"></script>
 </body>
 </html>

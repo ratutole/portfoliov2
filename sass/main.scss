@@ -1,5 +1,33 @@
-@import "variables";
-@import "mixins";
-@import "base";
-@import "component";
-@import "layout";
+// Author: Parth Patel
+// Version: 1.0
+// Project: Portfolio Website
+
+// imports variables
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// imports utilies
+@import 'utilities/utilities';
+
+// imports pages
+@import 'pages/home';
+
+// import base
+@import 'base/base';
+
+// imports layouts
+@import 'layout/landing';
+@import 'layout/skills';
+@import 'layout/projects';
+@import 'layout/about';
+@import 'layout/footer';
+
+// imports components
+@import 'components/heading';
+@import 'components/navigation';
+@import 'components/hamburger';
+@import 'components/datestamp';
+@import 'components/skillCard';
+@import 'components/projectsItem';
+@import 'components/projectCard';
+@import 'components/certificate';
