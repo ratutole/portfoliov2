@@ -4,5 +4,8 @@
     background-color: $color-gray--light;
     &.active{
         transform: translateX(30rem);
+        @include respond(phone){
+            transform: translateX(25rem);
+        }
     }
 }

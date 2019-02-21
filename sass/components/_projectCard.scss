@@ -1,9 +1,15 @@
 .project-card{
     display: flex;
 
+    @include respond(phone){
+        flex-direction: column;
+    }
 
     &__item{
         margin: 0 2rem;
+        @include respond(phone){
+            margin-bottom: 5rem;
+        }
     }
 
     &__heading{
@@ -15,7 +21,11 @@
         position: relative;
         font-size: 1.8rem;
         box-shadow: 0 .2rem .5rem $color-shadow--light;
-        // z-index: 50;
+        @include respond(phone){
+            transform: translate(0, 0);
+            width: 100%;
+            margin-bottom: .5rem;
+        }
     }
 
     &__image{

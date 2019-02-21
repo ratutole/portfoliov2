@@ -1,6 +1,14 @@
 .projects-item{
     display: flex;
 
+    @include respond(phone){
+        flex-direction: column;
+    }
+
+    &--2{
+        flex-direction: column-reverse;
+    }
+
     &__content{
         flex: 0 0 22.5%;
         background-color: $color-gray--light;
@@ -8,13 +16,23 @@
         transform: translateY(2rem);
         padding: 2rem;
         box-shadow: 0 .3rem .6rem $color-shadow--light;
+        @include respond(phone){
+            margin-bottom: 3rem;
+        }
 
         &--1{
             transform: rotate(-8deg) translateY(2.5rem);
+            @include respond(tabP){
+                transform: rotate(0deg) translateY(2rem);
+            }
         }
 
         &--2{
             transform: rotate(2deg) translate(1.5rem, 1.5rem);
+            @include respond(tabP){
+                transform: rotate(0deg) translateY(2rem);
+            }
+            
         }
     }
     

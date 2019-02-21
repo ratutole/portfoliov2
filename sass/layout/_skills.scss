@@ -4,5 +4,10 @@
     &__container{
         display: flex;
         justify-content: space-between;
+        
+        @include respond(phone){
+            align-items: center;
+            flex-direction: column;
+        }
     }
 }

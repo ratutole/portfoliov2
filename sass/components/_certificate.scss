@@ -7,5 +7,13 @@
         padding: 1.5rem 0;
         max-width: 60%;
         color: $color-gray--medium2;
+
+        @include respond(tabP){
+            max-width: 80%;
+        }
+
+        @include respond(phone){
+            max-width: 100%;
+        }
     }
 }

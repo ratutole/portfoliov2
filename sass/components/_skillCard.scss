@@ -3,7 +3,24 @@
     padding: 2rem 4rem;
     box-shadow: 0 .3rem .6rem $color-shadow--light;
     min-width: 40rem;
+    max-width: 40rem;
     min-height: 25rem;
+
+    @include respond(tabL){
+        min-width: 26rem;
+        margin: 0 .6rem;
+    }
+
+    @include respond(tabP){
+        min-width: 21rem;
+        margin: 0 .6rem;
+    }
+
+    @include respond(phone){
+        min-width: 100%;
+        margin: 2rem .6rem;
+        background-color: $color-gray--light;
+    }
 
     &__list{
         list-style: none;
