@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: flex-start;
     opacity: 0;
+    visibility: hidden;
     transform: translateX(-100%);
     transition: all .3s ease-out;
     z-index: 150;
@@ -19,6 +20,7 @@
     }
     &.is-visible{
         opacity: 1;
+        visibility: visible;
         transform: translateX(0%);
     }
     &__container{
